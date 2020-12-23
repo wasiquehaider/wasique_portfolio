@@ -197,6 +197,7 @@ function About() {
         <img
           src={urlFor(author.authorImage).url()}
           className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+          alt="author image"
         />
       </div>
     </div>

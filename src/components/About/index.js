@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client";
-import bg from "../../assets/bg.jpg";
-import myself from "../../assets/myself.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import Loader from "../Loader";

@@ -10,19 +10,13 @@ function Navbar() {
   return (
     <header className="bg-blue-200">
       <nav className="container mx-auto flex flex-wrap items-center justify-between p-5">
-        <img
-          src="http://acmelogos.com/images/logo-1.svg"
-          alt="ACME"
-          width="120"
-        />
-        {/* <NavLink
+        <NavLink
           to="/"
           exact
-          activeClassName="text-blue-800"
-          className="w-130 inflex-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-blue-300 text-4xl font-bold cursive tracking-widest"
+          className="w-130 inflex-flex items-center py-6 px-3 mr-4 text-blue-800 hover:text-blue-300 lg:text-4xl sm:text-2xl font-bold cursive tracking-widest"
         >
           Wasique Haider
-        </NavLink> */}
+        </NavLink>
         <div className="flex md:hidden">
           <button id="hamburger" onClick={() => toggleNav()}>
             <img

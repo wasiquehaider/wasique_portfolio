@@ -4,7 +4,7 @@ import Typical from "react-typical";
 
 function Home() {
   return (
-    <div className="gradient leading-relaxed tracking-wide flex flex-col">
+    <div className="bg-blue-200 leading-relaxed tracking-wide flex flex-col">
       <div className="container mx-auto h-screen">
         <div className="text-center justify-center items-center px-3 lg:px-0">
           <h1 className="my-4 text-2xl md:text-3xl lg:text-7xl font-black leading-tight">
@@ -28,12 +28,15 @@ function Home() {
         </div>
 
         <div className="flex items-center w-full mx-auto content-end">
-          <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl">
+          <div className="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-editor w-1/2 rounded shadow-xl">
             <Typical
-              steps={["Hello I am Wasique. Welcome to my Portfolio. 🙂", 2000]}
+              steps={[
+                "console.log('Hello Watchers. Welcome to my Portfolio.')",
+                2000,
+              ]}
               loop={1}
               wrapper="p"
-              className="my-3 mx-2"
+              className="my-3 mx-2 sourceCode editor-text"
             />
           </div>
         </div>

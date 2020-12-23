@@ -21,7 +21,7 @@ function Project() {
       .catch(console.error);
   }, []);
   return (
-    <main className="bg-purple-100 min-h-screen p-12">
+    <main className="bg-blue-200 min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">

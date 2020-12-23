@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 body {
   font-family: "Raleway", sans-serif;
@@ -12,6 +13,10 @@ body {
 .cursive {
   font-family: "Langar", cursive;
   font-weight: 700;
+}
+
+.sourceCode {
+  font-family: "Source Code Pro", monospace;
 }
 
 .prose img {
@@ -22,4 +27,11 @@ body {
 
 .home-name {
   font-size: 150px;
+}
+
+.bg-editor {
+  background-color: #282a36;
+}
+.editor-text {
+  color: #8be9fd;
 }

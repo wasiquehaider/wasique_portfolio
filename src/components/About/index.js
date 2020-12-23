@@ -35,11 +35,11 @@ function About() {
     );
 
   return (
-    <div className="bg-blue-200 ">
-      <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    <div className="bg-blue-200">
+      <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-0 lg:my-0 ">
         <div
           id="profile"
-          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+          className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 my-10 lg:mx-0"
         >
           <div className="p-4 md:p-12 text-center lg:text-left">
             <div

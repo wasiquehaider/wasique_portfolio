@@ -32,6 +32,12 @@ export default {
       },
     },
     {
+      name: "imagesGallery",
+      title: "Images gallery",
+      type: "array",
+      of: [{ type: "image" }],
+    },
+    {
       name: "publishedAt",
       title: "Published at",
       type: "datetime",

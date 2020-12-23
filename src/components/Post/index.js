@@ -10,6 +10,7 @@ function Post() {
         `*[_type == "post"]{
       title,
       slug,
+      imagesGallery,
       mainImage{
         asset->{
           _id,

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import { AnimatedSwitch } from "react-router-transition";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,13 +11,18 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className="switch-wrapper"
+      >
         <Route component={Home} path="/" exact />
         <Route component={About} path="/about" />
         <Route component={SinglePost} path="/post/:slug" />
         <Route component={Post} path="/post" />
         <Route component={Project} path="/project" />
-      </Switch>
+      </AnimatedSwitch>
     </Router>
   );
 }

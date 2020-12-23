@@ -21,7 +21,7 @@ function Post() {
     }`
       )
       .then((data) => {
-        console.log("data-------", data);
+        // console.log("data-------", data);
         setPost(data);
       })
       .catch(console.error);

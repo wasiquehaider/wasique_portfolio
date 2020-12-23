@@ -36,7 +36,7 @@ function Home() {
               ]}
               loop={1}
               wrapper="p"
-              className="my-3 mx-2 sourceCode editor-text"
+              className="my-3 mx-4 sourceCode editor-text"
             />
           </div>
         </div>

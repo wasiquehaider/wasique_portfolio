@@ -35,3 +35,13 @@ body {
 .editor-text {
   color: #8be9fd;
 }
+
+/* Router transitions */
+
+.switch-wrapper {
+  position: relative;
+}
+
+/* .switch-wrapper > div {
+  position: absolute;
+} */

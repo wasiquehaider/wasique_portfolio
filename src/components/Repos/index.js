@@ -3,7 +3,6 @@ import "./styles.css";
 import _ from "lodash";
 
 function Repos({ repos }) {
-  console.log("repos", repos);
   const listRepos = !_.isEmpty(repos) ? (
     repos.slice(0, 10).map((item) => (
       <a
@@ -39,13 +38,13 @@ function Repos({ repos }) {
     <h4>No Repositories</h4>
   );
   return (
-    <section class="bg-gray-100 py-8">
-      <div class="container mx-auto px-2 text-gray-800">
-        <h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+    <section className="bg-gray-100 py-8">
+      <div className="container mx-auto px-2 text-gray-800">
+        <h2 className="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
           GitHub Repositories
         </h2>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-4/12 opacity-25 my-0 py-0 rounded-t"></div>
+        <div className="w-full mb-4">
+          <div className="h-1 mx-auto gradient w-4/12 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1 p-10">

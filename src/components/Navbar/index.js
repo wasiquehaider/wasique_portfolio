@@ -9,14 +9,7 @@ function Navbar() {
   };
   return (
     <header className="bg-blue-200">
-      <nav className="container mx-auto flex flex-wrap items-center justify-between">
-        <NavLink
-          to="/"
-          exact
-          className="w-130 inflex-flex items-center py-6 px-3 mr-4 text-blue-800 hover:text-blue-300 lg:text-4xl sm:text-2xl font-bold cursive tracking-widest"
-        >
-          Wasique Haider
-        </NavLink>
+      <nav className="container mx-auto flex flex-wrap items-center justify-end py-5">
         <div className="flex md:hidden">
           <button id="hamburger" onClick={() => toggleNav()}>
             <img
@@ -44,30 +37,37 @@ function Navbar() {
             to="/"
             exact
             activeClassName="text-white bg-blue-700"
-            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 border-blue-900 rounded"
+            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 mx-3 border-blue-900 rounded"
           >
             Home
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/post"
             activeClassName="text-white bg-blue-700"
             className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 border-blue-900 rounded"
           >
             Blog Posts
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/project"
             activeClassName="text-white bg-blue-700"
-            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 border-blue-900 rounded"
+            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 mx-3 border-blue-900 rounded"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-white bg-blue-700"
-            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 border-blue-900 rounded"
+            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 mx-3 border-blue-900 rounded"
           >
             About Me
+          </NavLink>
+          <NavLink
+            to="/contact"
+            activeClassName="text-white bg-blue-700"
+            className="block lg:mx-2 md:inline-block transition delay-300 duration-300 ease-in-out text-white-900 hover:text-white hover:bg-blue-700 px-3 py-3 mx-3 border-blue-900 rounded"
+          >
+            Contact
           </NavLink>
         </div>
         {/* <div className="inline-flex py-3 px-3 my-6">

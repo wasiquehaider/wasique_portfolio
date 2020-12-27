@@ -10,6 +10,7 @@ function Repos({ repos }) {
         key={item.id}
         href={item.html_url}
         target="_blank"
+        rel="noreferrer"
         className="github-card bg-white my-2 px-2 w-1/3 overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/3 xl:my-1 xl:px-1 xl:w-1/3"
         data-github="Nexmo/nexmo-ruby"
       >

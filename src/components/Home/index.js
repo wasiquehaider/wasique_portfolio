@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Typical from "react-typical";
+import axios from "axios";
+import Repos from "../Repos";
 
 function Home() {
+  const [respositories, setRespositories] = useState([]);
+  useEffect(() => {
+    fetchRepositories("wasiquehaider");
+  }, []);
+
+  const fetchRepositories = async (userName) => {
+    try {
+      const result = await axios(
+        `https://api.github.com/users/${userName}/repos?sort=created&direction=desc`
+      );
+      setRespositories(result.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div className="bg-blue-200 leading-relaxed tracking-wide flex flex-col">
       <div className="container mx-auto h-screen">
@@ -41,6 +58,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Repos repos={respositories} />
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Navbar() {
   };
   return (
     <header className="bg-blue-200">
-      <nav className="container mx-auto flex flex-wrap items-center justify-between p-5">
+      <nav className="container mx-auto flex flex-wrap items-center justify-between">
         <NavLink
           to="/"
           exact
